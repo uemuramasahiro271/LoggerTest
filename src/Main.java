@@ -51,8 +51,11 @@ public class Main extends JFrame {
 	    b.addActionListener(new ActionListener() {
 	      @Override
 	      public void actionPerformed(ActionEvent e) {
-	        // メッセージダイアログを表示
-	        JOptionPane.showMessageDialog(null, "ログを出力しました!");
+
+	    	  LogTest.info("Test");
+
+		      // メッセージダイアログを表示
+		      JOptionPane.showMessageDialog(null, "ログを出力しました!");
 	      }
 	    });
 	}
